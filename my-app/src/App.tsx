@@ -13,25 +13,25 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">The Backboard</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
 
         <Switch>
-          <Route path="/about">
-            <AboutMe />
-          </Route>
-          <Route path="/users">
+          <Route exact path="/">
             <Backboard />
           </Route>
-          <Route path="/">
+          <Route exact path="/about">
+            <AboutMe />
+          </Route>
+          <Route exact path="/contact">
             <Contact />
           </Route>
         </Switch>
