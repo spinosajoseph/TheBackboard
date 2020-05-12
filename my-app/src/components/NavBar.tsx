@@ -31,7 +31,7 @@ export const NavBar = () => {
             <Box display="flex" flexDirection="row">
               <Box display="flex" justifyContent="center" order={2} mx="auto">
                 <RouteItem>
-                  <Link to="/">The Backboard</Link>
+                  <Link to="/">Backboard</Link>
                 </RouteItem>
               </Box>
               <Box display="flex" justifyContent="center" order={1} mx="auto">
