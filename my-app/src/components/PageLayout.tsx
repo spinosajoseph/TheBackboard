@@ -9,9 +9,7 @@ interface Props {
 export const PageLayout: React.FC<Props> = ({ title, children }) => {
   return (
     <Container maxWidth="xl">
-      <Box>
-        <NavBar />
-      </Box>
+      <Box></Box>
       <Box>
         <h2>{title}</h2>
       </Box>

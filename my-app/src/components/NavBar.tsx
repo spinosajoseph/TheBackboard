@@ -4,13 +4,22 @@ import styled from "styled-components";
 import { Backboard } from "../pages/Backboard";
 import { AboutMe } from "../pages/AboutMe";
 import { Contact } from "../pages/Contact";
+import { Box } from "@material-ui/core";
 
 const InlineNavigationBar = styled.ul`
+  display: inline;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+`;
+
+const RouteItem = styled.li`
+  display: inline;
+`;
+
+const RouteBox = styled(Box)`
+  display: flex;
 `;
 
 export const NavBar = () => {
@@ -19,15 +28,23 @@ export const NavBar = () => {
       <div>
         <nav>
           <InlineNavigationBar>
-            <li>
-              <Link to="/">The Backboard</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            <Box display="flex" flexDirection="row">
+              <Box display="flex" justifyContent="center" order={2} mx="auto">
+                <RouteItem>
+                  <Link to="/">The Backboard</Link>
+                </RouteItem>
+              </Box>
+              <Box display="flex" justifyContent="center" order={1} mx="auto">
+                <RouteItem>
+                  <Link to="/about">About</Link>
+                </RouteItem>
+              </Box>
+              <Box display="flex" justifyContent="center" order={3} mx="auto">
+                <RouteItem>
+                  <Link to="/contact">Contact</Link>
+                </RouteItem>
+              </Box>
+            </Box>
           </InlineNavigationBar>
         </nav>
 
