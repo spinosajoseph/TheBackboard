@@ -8,12 +8,13 @@ interface Props {
 
 export const PageLayout: React.FC<Props> = ({ title, children }) => {
   return (
-    <Container maxWidth="xl">
-      <Box></Box>
-      <Box>
-        <h2>{title}</h2>
+    <Container>
+      <Box maxWidth="xl" display={"flex"} flexDirection="column" alignItems="center" paddingTop='5%'>
+        <Box paddingBottom='20px' >
+          <h2>{title}</h2>
+        </Box>
+        <Box>{children}</Box>
       </Box>
-      <Box>{children}</Box>
     </Container>
   );
 };
