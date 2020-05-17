@@ -5,16 +5,16 @@ import { Box } from "@material-ui/core";
 export const AboutMe: React.FC = () => {
   return (
     <PageLayout title="About Me">
-      <Box flex alignItems="center">
+      <Box flex textAlign="center">
         <img
-          style={{}}
+          style={{display: 'inline-block'}}
           height={"250px"}
           width={"300px"}
           src={require("../images/Joe.jpg")}
         />
       </Box>
-      <Box>
-        <p>
+      <Box paddingTop={'40px'} margin="auto" maxWidth="80%" textAlign="center">
+        <p >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
           quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
