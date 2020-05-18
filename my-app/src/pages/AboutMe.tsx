@@ -8,9 +8,9 @@ export const AboutMe: React.FC = () => {
       <Box flex textAlign="center">
         <img
           style={{display: 'inline-block'}}
-          height={"250px"}
-          width={"300px"}
-          src={"/images/Joe.jpg"}
+          height={"300px"}
+          width={"350px"}
+          src={"/images/Dad.jpg"}
         />
       </Box>
       <Box paddingTop={'40px'} margin="auto" maxWidth="80%" textAlign="center">
