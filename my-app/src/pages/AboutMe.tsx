@@ -10,7 +10,7 @@ export const AboutMe: React.FC = () => {
           style={{display: 'inline-block'}}
           height={"250px"}
           width={"300px"}
-          src={require("../images/Joe.jpg")}
+          src={"/images/Joe.jpg"}
         />
       </Box>
       <Box paddingTop={'40px'} margin="auto" maxWidth="80%" textAlign="center">
