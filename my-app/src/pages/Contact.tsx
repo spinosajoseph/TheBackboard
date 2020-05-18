@@ -1,5 +1,8 @@
 import React from "react";
+import { PageLayout } from "../components/PageLayout";
 
 export const Contact: React.FC = () => {
-  return <h2>Contact</h2>;
+  return (
+    <PageLayout title="Contact" />
+  );
 };
