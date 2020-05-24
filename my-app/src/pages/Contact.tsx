@@ -17,9 +17,25 @@ export const Contact: React.FC = () => {
   return (
     <PageLayout title="Contact">
       <form onSubmit={formik.handleSubmit}>
-        <Box display="flex" flexDirection="column" padding="50px">
-          <Box flex="0 1 auto" paddingBottom="50px">
-            <label htmlFor="email">Email Address</label>
+        <Box
+          display="flex"
+          flexDirection="column"
+          padding="50px"
+          alignItems="center"
+        >
+          <Box
+            flex="0 1 auto"
+            paddingBottom="50px"
+            display="flex"
+            flexWrap="wrap"
+            alignItems="center"
+          >
+            <label
+              style={{ flex: "1 0 120px", maxWidth: "120px", margin: 0 }}
+              htmlFor="email"
+            >
+              Email Address
+            </label>
             <input
               id="email"
               name="email"
@@ -29,8 +45,19 @@ export const Contact: React.FC = () => {
               style={{ display: "inlineBlock" }}
             />
           </Box>
-          <Box flex="0 1 auto" paddingBottom="50px">
-            <label htmlFor="body">Send me a Message!</label>
+          <Box
+            flex="0 1 auto"
+            paddingBottom="50px"
+            display="flex"
+            flexWrap="wrap"
+            alignItems="center"
+          >
+            <label
+              style={{ flex: "1 0 120px", maxWidth: "120px", margin: 0 }}
+              htmlFor="body"
+            >
+             Message
+            </label>
             <textarea
               style={{
                 height: "200px",
@@ -41,6 +68,7 @@ export const Contact: React.FC = () => {
               id="body"
               name="body"
               onChange={formik.handleChange}
+              placeholder="Enter your message here"
               value={formik.values.body}
             ></textarea>
           </Box>
