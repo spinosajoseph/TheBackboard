@@ -5,7 +5,7 @@ import { Box } from "@material-ui/core";
 export const AboutMe: React.FC = () => {
   return (
     <PageLayout title="About Me">
-      <Box flex textAlign="center">
+      <Box textAlign="center">
         <img
           style={{display: 'inline-block'}}
           height={"300px"}

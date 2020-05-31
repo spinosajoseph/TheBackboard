@@ -1,6 +1,6 @@
 import React from "react";
 import { PageLayout } from "../components/PageLayout";
-import { useFormik, FormikConsumer } from "formik";
+import { useFormik } from "formik";
 import { Box } from "@material-ui/core";
 
 export const Contact: React.FC = () => {

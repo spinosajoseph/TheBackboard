@@ -18,10 +18,6 @@ const RouteItem = styled.li`
   display: inline;
 `;
 
-const RouteBox = styled(Box)`
-  display: flex;
-`;
-
 export const NavBar = () => {
   return (
     <Router>
