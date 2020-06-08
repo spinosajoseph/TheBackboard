@@ -15,7 +15,7 @@ export const PageLayout: React.FC<Props> = ({ title, subTitle, children }) => {
         height: "100%",
         minHeight: "100%",
         color: "#f0ffff",
-        backgroundColor: "#3b4345",
+        backgroundColor: "#485154",
       }}
     >
       <Box
