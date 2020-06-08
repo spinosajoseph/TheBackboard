@@ -4,9 +4,10 @@ import { NavBar } from "./NavBar";
 
 interface Props {
   title: string;
+  subTitle?: string;
 }
 
-export const PageLayout: React.FC<Props> = ({ title, children }) => {
+export const PageLayout: React.FC<Props> = ({ title, subTitle, children }) => {
   return (
     <Container
       maxWidth="xl"
@@ -26,6 +27,9 @@ export const PageLayout: React.FC<Props> = ({ title, children }) => {
       >
         <Box paddingBottom="20px">
           <h2>{title}</h2>
+        </Box>
+        <Box paddingBottom="20px">
+          <h3>{subTitle}</h3>
         </Box>
         <Box>{children}</Box>
       </Box>

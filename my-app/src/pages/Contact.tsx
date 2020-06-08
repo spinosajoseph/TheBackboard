@@ -15,13 +15,13 @@ export const Contact: React.FC = () => {
   });
 
   return (
-    <PageLayout title="Contact">
+    <PageLayout title="Contact" subTitle="If you would like to inquire about the Backboard, please reach out to me below!">
       <form onSubmit={formik.handleSubmit}>
         <Box
           display="flex"
           flexDirection="column"
           padding="50px"
-          alignItems="center"
+          alignItems="flex-start"
         >
           <Box
             flex="0 1 auto"
@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
               style={{ flex: "1 0 120px", maxWidth: "120px", margin: 0 }}
               htmlFor="body"
             >
-             Message
+              Message
             </label>
             <textarea
               style={{
